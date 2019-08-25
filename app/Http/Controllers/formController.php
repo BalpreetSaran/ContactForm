@@ -27,6 +27,8 @@ class formController extends Controller
             ->orWhere('message', 'like', '%' .$search. '%')
             ->paginate(10);
 
+        $submissions->setPath('/');
+
 		return view('home')->with('submissions', $submissions);
     }
 
