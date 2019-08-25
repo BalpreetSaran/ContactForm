@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Auth::routes();
 Auth::routes(['verify' => true, 'register' => false, 'reset' => false]);
 
 
-Route::get('/contact', 'formController@create');
-Route::post('/contact', 'formController@store');
+Route::get('/', 'formController@create');
+Route::post('/', 'formController@store');
 Route::get('/submissions', 'formController@search')->middleware('auth');

@@ -10,7 +10,7 @@ class formController extends Controller
     //
     public function create()
     {
-        return view('contact');
+        return view('welcome');
 	}
 
     public function index()
@@ -45,6 +45,6 @@ class formController extends Controller
         \ContactForm\contactFormSubmission::create($data);
 
         
-        return redirect('/contact')->with('message', 'Thanks for your message. We\'ll be in touch.');
+        return redirect('/')->with('message', 'Thanks for your message. We\'ll be in touch.');
     }
 }
