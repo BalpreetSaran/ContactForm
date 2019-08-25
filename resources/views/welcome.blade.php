@@ -3,11 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="com-md-6">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">App Info</div>
                 <div class="card-body">
-                    <p>App text</p>
+                    <p>In this app, a user can sumbit the contact form and saves the data into database.</p>
+                    <p>An admin user is able to check all form submissions after login. They can also download json data from api using basic authentication.</p>
                 </div>
             </div>
         </div>
