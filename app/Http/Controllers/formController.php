@@ -10,7 +10,7 @@ class formController extends Controller
     //
     public function create()
     {
-        return view('welcome');
+        return view('contact');
 	}
 
     public function index()
@@ -27,9 +27,9 @@ class formController extends Controller
             ->orWhere('message', 'like', '%' .$search. '%')
             ->paginate(10);
 
-        $submissions->setPath('/home');
+        $submissions->setPath('/submissions');
 
-		return view('home')->with('submissions', $submissions);
+		return view('submissions')->with('submissions', $submissions);
     }
 
     public function store(){
@@ -45,6 +45,6 @@ class formController extends Controller
         \ContactForm\contactFormSubmission::create($data);
 
         
-        return redirect('/')->with('message', 'Thanks for your message. We\'ll be in touch.');
+        return redirect('/contact')->with('message', 'Thanks for your message. We\'ll be in touch.');
     }
 }
