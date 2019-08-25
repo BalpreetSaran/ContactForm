@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="card-body">
-                    <table id="sortable" class="table">
+                    <table id="sortable" class="table w-100">
                         <thead>
                             <tr>
                                 <th class="sort">Submitted at</th>
