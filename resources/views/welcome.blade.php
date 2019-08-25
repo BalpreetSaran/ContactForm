@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="com-md-6">
             <div class="card">
-                text
+                <div class="card-header">App Info</div>
+                <div class="card-body">
+                    <p>App text</p>
+                </div>
             </div>
         </div>
         <div class="col-md-6">
