@@ -8,7 +8,8 @@
                 <div class="card-header">App Info</div>
                 <div class="card-body">
                     <p>In this app, a user can sumbit the contact form and saves the data into database.</p>
-                    <p>An admin user is able to check all form submissions after login. They can also download json data from api using basic authentication.</p>
+                    <p>An admin user is able to check all form submissions after login.</p> 
+                    <p>Admin user can also download json data from api using basic authentication. Here is the URL to access form submissions using api: <a href="/api/submissions">https://contactform-balpreet-saran.herokuapp.com/api/submissions</a></p>
                 </div>
             </div>
         </div>
