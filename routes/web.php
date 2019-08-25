@@ -15,8 +15,8 @@
 //     return view('welcome');
 // });
 
-// Auth::routes();
-Auth::routes(['verify' => true, 'register' => false, 'reset' => false]);
+Auth::routes();
+// Auth::routes(['verify' => true, 'register' => false, 'reset' => false]);
 
 
 Route::get('/', 'formController@create');
