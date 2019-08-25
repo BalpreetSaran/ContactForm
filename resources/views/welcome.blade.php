@@ -3,7 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="com-md-6">
+            <div class="card">
+                text
+            </div>
+        </div>
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">Contact Form</div>
 
