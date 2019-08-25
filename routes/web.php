@@ -15,6 +15,10 @@
 //     return view('welcome');
 // });
 
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
+
 // Auth::routes();
 Auth::routes(['verify' => true, 'register' => false, 'reset' => false]);
 
