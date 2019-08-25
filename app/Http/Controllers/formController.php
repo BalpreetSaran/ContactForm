@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace ContactForm\Http\Controllers;
 
-use App\contactFormSubmission;
+use ContactForm\contactFormSubmission;
 use Illuminate\Http\Request;
 
 class formController extends Controller
@@ -40,7 +40,7 @@ class formController extends Controller
         ]);
         
         // Save Data in DB
-        \App\contactFormSubmission::create($data);
+        \ContactForm\contactFormSubmission::create($data);
 
         
         return redirect('/')->with('message', 'Thanks for your message. We\'ll be in touch.');
