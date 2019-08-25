@@ -3,7 +3,7 @@
 namespace ContactForm\Providers;
 
 use Illuminate\Support\ServiceProvider;
-// use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\URL;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -16,7 +16,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        // URL::forceSchema('https');
     }
 
     /**
@@ -27,5 +26,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        URL::forceSchema('https');
     }
 }
