@@ -11,7 +11,7 @@
                             Form Submissions
                         </div>
                         <div class="col col-md-4">
-                            <form action="/home" method="get">
+                            <form action="/submissions" method="get">
                                 <div class="input-group">
                                     <input type="search" name="search" id="search" class="form-control" placeholder="Search">
                                     <span class="input-group-prepend">
